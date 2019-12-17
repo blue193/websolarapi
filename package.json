@@ -18,6 +18,7 @@
   "homepage": "https://github.com/blueeye113/websolarapi#readme",
   "dependencies": {
     "child_process": "^1.0.2",
+    "express": "^4.17.1",
     "path": "^0.12.7",
     "phantomjs": "^2.1.7"
   }
