@@ -1,0 +1,24 @@
+{
+  "name": "websolarapi",
+  "version": "1.0.0",
+  "description": "cookie",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blueeye113/websolarapi.git"
+  },
+  "author": "blueeye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blueeye113/websolarapi/issues"
+  },
+  "homepage": "https://github.com/blueeye113/websolarapi#readme",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "path": "^0.12.7",
+    "phantomjs": "^2.1.7"
+  }
+}
