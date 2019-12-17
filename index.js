@@ -10,5 +10,5 @@ var childArgs = [
  
 childProcess.execFile(binPath, childArgs, function(err, stdout, stderr) {
   // handle results
-  console.log('stdout', stdout);
+  console.log("execFileSTDOUT:", JSON.stringify(stdout))
 })
