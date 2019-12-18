@@ -1,4 +1,5 @@
 const express =  require('express');
+const cors = require('cors');
 const app = express();
 const port = 3000;
 
@@ -11,7 +12,7 @@ var binPath = phantomjs.path
 var childArgs = [
   path.join(__dirname, 'cookie.js')
 ]
-
+app.use(cors());
 app.get('/', (req, res) => {
     var data = {};
     childProcess.execFile(binPath, childArgs, function(err, stdout, stderr) {
