@@ -1,3 +1,5 @@
+'use strict'
+
 const express =  require('express');
 const cors = require('cors');
 const app = express();
@@ -22,4 +24,11 @@ app.get('/', (req, res) => {
     });
 });
 
-app.listen(port, () => console.log(`App listening on port ${port}`));
+if (module === require.main) {
+  const server = app.listen(process.env.PORT || 8080, () => {
+    const port = server.address().port;
+    console.log(`App listening on port ${port}`);
+  })
+}
+
+module.exports = app;
