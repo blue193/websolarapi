@@ -11,6 +11,7 @@ page.open("https://www.solarweb.com/Home/GuestLogOn?pvSystemid=4e0095f0-0673-487
     var url = "https://www.solarweb.com/Chart/GetChartNew?pvSystemId=660784d8-4b07-487b-b940-71cfebc24e1c&year="+year+"&month="+month+"&day="+day+"&interval=day&view=consumption";
     //sample url
     // "https://www.solarweb.com/Chart/GetChartNew?pvSystemId=660784d8-4b07-487b-b940-71cfebc24e1c&year=2019&month=12&day=15&interval=day&view=consumption"
+    
     page.open(url, function(status) {
         
         var ua = page.evaluate(function() {
